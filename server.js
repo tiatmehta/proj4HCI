@@ -29,4 +29,8 @@ app.get('/login.html', (req, res) => {
     res.sendFile(path.join(__dirname + '/login.html'))
 })
 
+app.get('/homepage.html', (req, res) => {
+    res.sendFile(path.join(__dirname + '/homepage.html'))
+})
+
 app.listen(process.env.PORT || port);
