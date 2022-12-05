@@ -1,4 +1,3 @@
-
 const { request, reponse } = require('express');
 
 const express = require('express'),
@@ -33,8 +32,20 @@ app.get('/homepage.html', (req, res) => {
     res.sendFile(path.join(__dirname + '/homepage.html'))
 })
 
-app.get('/cat-217679.jpg', (req, res) => {
-    res.sendFile(path.join(__dirname + '/cat-217679.jpg'))
+app.get('/daisy.png', (req, res) => {
+    res.sendFile(path.join(__dirname + '/daisy.png'))
+})
+
+app.get('/daisy2.png', (req, res) => {
+    res.sendFile(path.join(__dirname + '/daisy2.png'))
+})
+
+app.get('/daisy3.png', (req, res) => {
+    res.sendFile(path.join(__dirname + '/daisy3.png'))
+})
+
+app.get('/scripts.js', (req, res) => {
+    res.sendFile(path.join(__dirname + '/scripts.js'))
 })
 
 app.listen(process.env.PORT || port);
