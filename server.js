@@ -33,4 +33,8 @@ app.get('/homepage.html', (req, res) => {
     res.sendFile(path.join(__dirname + '/homepage.html'))
 })
 
+app.get('/cat-217679.jpg', (req, res) => {
+    res.sendFile(path.join(__dirname + '/cat-217679.jpg'))
+})
+
 app.listen(process.env.PORT || port);

@@ -9,10 +9,35 @@
 </head>
 
 <body>
-    
-    <div class=""
-    <div class="user-container">
-        <a class="nes-btn is-warning" href="" id="edit-info-btn">✎</a>
+
+    <div class="top-btns-container">
+        <div class="left" id="logout-btn">
+            <section>
+                <button type="button" class="nes-btn" id="logout-btn"
+                    onclick="document.getElementById('dialog-rounded').showModal();">
+                    Logout
+                </button>
+                <dialog class="nes-dialog is-rounded" id="dialog-rounded">
+                    <form method="dialog">
+                        <p class="title" style="text-align: center;">Logout of your account</p>
+                        <p style="text-align: center;">
+                            Are you sure you want to logout?
+                        </p>
+                        <menu class=" dialog-menu">
+                            <button class="nes-btn">No</button>
+                            <a class="nes-btn is-warning" href="index.html" id="edit-info-btn">Yes</a>
+                        </menu>
+                    </form>
+                </dialog>
+            </section>
+        </div>
+        <div class="right">
+            <a class="nes-btn is-warning" href="" id="edit-info-btn">✎</a>
+        </div>
+    </div>
+
+    <div class="cat-image">
+        <img src="cat-217679.jpg" class="center">
     </div>
 
 </body>
@@ -22,8 +47,56 @@
         background-color: #CBC3E3 !important;
     }
 
+    p {
+        font-size: xx-small;
+    }
+
+    img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
     #edit-info-btn {
         float: right;
+    }
+
+    .cat-image {
+        width: auto;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .nes-btn {
+        font-size: xx-small;
+    }
+
+    .left {
+        top: 0px;
+        float: left;
+        margin-right: 100px;
+        position: relative;
+    }
+
+    .right {
+        top: 0px;
+        float: right;
+        margin-left: 130px;
+        position: relative;
+    }
+
+    .container {
+        top: 0px;
+        position: absolute;
     }
 </style>
 
