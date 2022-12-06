@@ -44,8 +44,24 @@ app.get('/daisy3.png', (req, res) => {
     res.sendFile(path.join(__dirname + '/daisy3.png'))
 })
 
-app.get('/scripts.js', (req, res) => {
-    res.sendFile(path.join(__dirname + '/scripts.js'))
+app.get('/match.html', (req, res) => {
+    res.sendFile(path.join(__dirname + '/match.html'))
+})
+
+app.get('/match2.html', (req, res) => {
+    res.sendFile(path.join(__dirname + '/match2.html'))
+})
+
+app.get('/homepage2.html', (req, res) => {
+    res.sendFile(path.join(__dirname + '/homepage2.html'))
+})
+
+app.get('/sally.jpg', (req, res) => {
+    res.sendFile(path.join(__dirname + '/sally.jpg'))
+})
+
+app.get('/sally2.jpg', (req, res) => {
+    res.sendFile(path.join(__dirname + '/sally2.jpg'))
 })
 
 app.listen(process.env.PORT || port);
