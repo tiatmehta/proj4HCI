@@ -10,8 +10,11 @@
 
 <body>
     <div class="container">
+        <div class="left">
+            <a class="nes-btn" href="chatboxes.html" style="font-size: xx-small;">Matches</a>
+        </div>
         <div class="right">
-            <a class="nes-btn is-warning" href="" id="edit-info-btn">✎</a>
+            <a class="nes-btn is-warning" href="user.html" id="edit-info-btn">✎</a>
         </div>
     </div>
 
@@ -113,6 +116,20 @@
         height: auto;
     }
 
+    .left {
+        top: 0px;
+        float: left;
+        margin-right: 100px;
+        position: relative;
+    }
+
+    .right {
+        top: 0px;
+        float: right;
+        margin-left: 132px;
+        position: relative;
+    }
+
     .container {
         top: 0px;
         position: absolute;
@@ -123,11 +140,6 @@
         text-align: center;
         padding: 15px;
         margin-top: 20%;
-    }
-
-    #edit-info-btn {
-        margin-left: 332px;
-        position: relative;
     }
 
     /* Slideshow container */

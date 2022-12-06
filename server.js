@@ -56,6 +56,14 @@ app.get('/homepage2.html', (req, res) => {
     res.sendFile(path.join(__dirname + '/homepage2.html'))
 })
 
+app.get('/chatboxes.html', (req, res) => {
+    res.sendFile(path.join(__dirname + '/chatboxes.html'))
+})
+
+app.get('/user.html', (req, res) => {
+    res.sendFile(path.join(__dirname + '/user.html'))
+})
+
 app.get('/sally.jpg', (req, res) => {
     res.sendFile(path.join(__dirname + '/sally.jpg'))
 })

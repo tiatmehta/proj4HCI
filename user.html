@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+</head>
+
+<body>
+    <h2>Account Preferences</h2>
+
+    <div class="container">
+        <div class="left">
+            <a class="nes-btn" href="homepage.html" style="font-size: xx-small;">Back</a>
+        </div>
+        <div class="right">
+            <section>
+                <button type="button" class="nes-btn is-warning" id="logout-btn"
+                    onclick="document.getElementById('dialog-rounded').showModal();" style="font-size: xx-small;">
+                    Logout
+                </button>
+                <dialog class="nes-dialog is-rounded" id="dialog-rounded">
+                    <form method="dialog">
+                        <p class="title" style="text-align: center;">Are you sure you want to logout
+                            of your account?</p>
+                        <menu class=" dialog-menu">
+                            <a class="nes-btn" href="" id="back-btn">No</a>
+                            <a class="nes-btn is-warning" href="index.html" id="yes-btn">Yes</a>
+                        </menu>
+                    </form>
+                </dialog>
+            </section>
+        </div>
+    </div>
+
+    <div class="selectors">
+        <label for="type_select">Type of Pet</label>
+        <div class="nes-select">
+            <select required id="type_select">
+                <option value="" disabled selected hidden>Select...</option>
+                <option value="0">Cat</option>
+            </select>
+        </div>
+
+        <label for="age_select">Age</label>
+        <div class="nes-select">
+            <select required id="age_select">
+                <option value="" disabled selected hidden>Select...</option>
+                <option value="0">Kitten</option>
+            </select>
+        </div>
+
+        <label for="family_select">Family Size</label>
+        <div class="nes-select">
+            <select required id="family_select">
+                <option value="" disabled selected hidden>Select...</option>
+                <option value="0">Small (1-2)</option>
+                <option value="1">Medium (2-4)</option>
+                <option value="2">Large (4+)</option>
+            </select>
+        </div>
+
+        <label for="price_select">Price Range</label>
+        <div class="nes-select">
+            <select required id="family_select">
+                <option value="" disabled selected hidden>Select...</option>
+                <option value="0">Free</option>
+            </select>
+        </div>
+
+        <label for="hours_select">Hours Spent Working Weekly</label>
+        <div class="nes-select">
+            <select required id="hours_select">
+                <option value="" disabled selected hidden>Select...</option>
+                <option value="0">0-10</option>
+                <option value="1">10-25</option>
+                <option value="2">25-40</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="save-btn">
+        <button type="button" class="nes-btn is-warning">Save Changes</button>
+    </div>
+</body>
+
+<style>
+    body {
+        background-color: #CBC3E3 !important;
+    }
+
+    h2 {
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        top: 5%;
+        font-size: larger;
+    }
+
+    p {
+        font-size: x-small;
+    }
+
+    .left {
+        top: 0px;
+        float: left;
+        margin-right: 100px;
+        position: relative;
+    }
+
+    .right {
+        top: 0px;
+        float: right;
+        margin-left: 121px;
+        position: relative;
+    }
+
+    .container {
+        top: 0px;
+        position: absolute;
+    }
+
+    .selectors {
+        position: absolute;
+        width: 100%;
+        margin-top: 120px;
+        padding: 5px;
+    }
+
+    .save-btn {
+        float: right;
+        margin-top: 600px;
+        padding: 5px;
+    }
+
+</style>
+
+</html>
